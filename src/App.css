@@ -1,0 +1,91 @@
+/* Ensure that the buttons are properly styled and spaced */
+.browse-area {
+  margin-top: 20px;
+  position: relative;
+}
+/* Add these styles to your CSS file or inline */
+
+.recipe-container {
+  min-height: 300px; /* Adjust the height as needed */
+}
+
+.browse-area {
+  margin-top: 20px; /* Ensure it stays below the recipe section */
+}
+
+.popular {
+  margin-bottom: 20px;
+}
+
+.input{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 30px;
+}
+.para{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.button-container {
+  display: flex;
+  gap: 10px; /* Space between buttons */
+  margin: 10px 0; /* Space around the button container */
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+.popular{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+.splide__arrow {
+  background-color: tan; /* Orange background */
+  border: none;              /* Remove border */
+  color: tan;              /* White text */
+  font-size: 10px;           /* Increase font size */
+  padding: 10px;             /* Add padding */
+  border-radius: 50%;        /* Make them circular */
+  cursor: pointer;           /* Pointer cursor on hover */
+}
+.splide__arrow:hover {
+  background-color: thistle; /* Darker orange on hover */
+}
+
+.splide__pagination__page {
+  background-color: #3498db; /* Customize the dot color */
+  width: 12px;
+  height: 12px;
+}
+.splide__slide {
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  text-align:justify
+
+}
+
+.splide__slide img {
+  max-width: 100%; /* Ensure image scales correctly */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 50px; /* Optional: styling */
+}
