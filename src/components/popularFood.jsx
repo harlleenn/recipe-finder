@@ -22,6 +22,7 @@ function PopularFood() {
         throw new Error("Failed to fetch data");
       }
       const data = await res.json();
+      console.log("test");
       setRecipes(data.meals || []); // Ensure recipes is always an array
     } catch (err) {
       setError(err.message);
