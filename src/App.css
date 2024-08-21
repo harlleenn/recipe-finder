@@ -1,9 +1,270 @@
-/* Ensure that the buttons are properly styled and spaced */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #E8F5E9; /* Light Green for background */
+  color: #2E7D32; /* Dark Green for text color */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #4CAF50; /* Dark Green for header */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px; /* Rounded corners */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.logo span {
+  font-weight: bold;
+  font-size: 24px;
+  color: #E8F5E9; /* Light Green for logo text */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #E8F5E9; /* Light Green for navigation links */
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #A5D6A7; /* Soft Green for hover effect */
+}
+
+.popular-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Adjust the alignment of the input and heading */
+.popular {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Search Bar */
+.popular .input {
+  margin-bottom: 20px;
+  width: 500px; /* Increase the width of the search bar */
+  padding: 10px; /* Add padding for a larger input area */
+  font-size: 16px; /* Increase the font size */
+  border-radius: 15px; /* Rounded corners */
+  border: 1px solid #1B5E20; /* Darker Green for border */
+}
+
+/* Heading */
+.heading {
+  margin-bottom: 20px;
+  font-size: 24px; /* Adjust the font size as needed */
+  text-align: center; /* Center the text */
+  color: #2E7D32; /* Dark Green for heading text */
+}
+
+footer {
+  background-color: #1B5E20; /* Darker Green for footer background */
+  color: #E8F5E9; /* Light Green for footer text */
+  padding: 20px 0;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-logo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.footer-logo img {
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  text-align: left;
+}
+
+.footer-column {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.footer-column h3 {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #E8F5E9; /* Light Green for footer headings */
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  color: #E8F5E9; /* Light Green for footer links */
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #4CAF50; /* Green for border */
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  font-size: 12px;
+  color: #E8F5E9; /* Light Green for footer bottom text */
+}
+
+.language-selector button {
+  background-color: transparent;
+  border: 1px solid #E8F5E9; /* Light Green border */
+  color: #E8F5E9; /* Light Green text */
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.15s, color 0.15s;
+}
+
+.language-selector button:active {
+  color: black;
+  background-color: white;
+}
+
+.language-selector button:hover {
+  opacity: 0.8; 
+  color: black;
+  background-color: rgb(238, 235, 235);
+}
+
+.recipe-container {
+  position: relative;
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background-color: darkkhaki; /* Use a contrasting color if needed */
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.instructions-popup {
+  background-color: darkkhaki; /* Use a contrasting color if needed */
+  margin-top: 20px;
+}
+
+.instructions-para {
+  margin-top: 10px;
+  white-space: pre-wrap;
+  background-color: darkkhaki; /* Use a contrasting color if needed */
+}
+
+.recipe-title {
+  font-family: 'Arial', sans-serif; /* Change to a font you prefer */
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+  color: black; /* A darker color for better readability */
+}
+
+.recipe-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px; /* Space between items */
+}
+
+.popup-content img {
+  max-width: 90vw; 
+  max-height: 90vh; 
+  border-radius: 8px;
+}
+
+.popup-overlay:hover {
+  cursor: pointer;
+}
+
 .browse-area {
   margin-top: 20px;
   position: relative;
 }
-/* Add these styles to your CSS file or inline */
+.filter-area{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .recipe-container {
   min-height: 300px; /* Adjust the height as needed */
@@ -13,18 +274,15 @@
   margin-top: 20px; /* Ensure it stays below the recipe section */
 }
 
-.popular {
-  margin-bottom: 20px;
-}
-
-.input{
+.input {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 10px;
   border-radius: 30px;
 }
-.para{
+
+.para {
   display: flex;
   align-items: center;
   text-align: center;
@@ -33,30 +291,32 @@
 
 .button-container {
   display: flex;
-  gap: 10px; /* Space between buttons */
-  margin: 10px 0; /* Space around the button container */
+  justify-content: center; 
+  gap: 10px; 
+  margin: 20px 0; 
+  margin-bottom: 60px;
 }
 
 button {
   padding: 10px 20px;
-  background-color: #f0f0f0;
+  background-color:#4CAF50; /* Match the orange theme */
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  color: #fff; /* White text for contrast */
+  transition: background-color 0.3s ease;
+  margin-top: 20px /* Smooth hover effect */
 }
 
 button:hover {
-  background-color: #ddd;
+  background-color: green; /* Pink color on hover */
 }
-.popular{
+
+.popular {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-
-
-
 
 .splide__arrow {
   background-color: tan; /* Orange background */
@@ -67,21 +327,23 @@ button:hover {
   border-radius: 50%;        /* Make them circular */
   cursor: pointer;           /* Pointer cursor on hover */
 }
+
 .splide__arrow:hover {
-  background-color: thistle; /* Darker orange on hover */
+  background-color: green; /* Darker orange on hover */
 }
 
 .splide__pagination__page {
-  background-color: #3498db; /* Customize the dot color */
+  margin-top: 10px;
+  background-color: green; /* Customize the dot color */
   width: 12px;
   height: 12px;
 }
+
 .splide__slide {
   display: flex; /* Use flexbox for centering */
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
-  text-align:justify
-
+  text-align: justify;
 }
 
 .splide__slide img {
